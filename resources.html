@@ -30,16 +30,11 @@
         }
         .gold { color: #d4af37; }
         .light-mode .gold { color: #b8860b; }
-        .scholar-card {
-            transition: transform 0.2s;
-        }
-        .scholar-card:hover {
-            transform: translateY(-5px);
-        }
         .video-container video {
             width: 100%;
-            max-height: 500px;
+            max-height: 520px;
             border-radius: 8px;
+            background: #000;
         }
     </style>
 </head>
@@ -74,23 +69,40 @@
         <h1 class="text-center gold mb-4">Resources</h1>
         <p class="text-center lead">Reference works and scholars</p>
 
-        <div class="row">
-            <!-- Abdurazzaq Janjalani -->
-            <div class="col-lg-8 mx-auto">
-                <div class="card scholar-card h-100 bg-dark border-warning">
+        <div class="row justify-content-center">
+            <!-- Shaykh Abdurazzaq Janjalani -->
+            <div class="col-lg-10">
+                <div class="card bg-dark border-warning mb-5">
                     <img src="janjalani.jpg" class="card-img-top" alt="Abdurazzaq Janjalani" style="height: 280px; object-fit: cover;">
                     <div class="card-body">
-                        <h5 class="gold">Abdurazzaq Janjalani (May Allah Accept Him)</h5>
-                        <p class="small mb-4">Prominent Islamic scholar and founder of the Moro Islamic Liberation Front (MILF) in Mindanao.</p>
-                        
-                        <h6 class="gold">Video Lecture</h6>
-                        <div class="video-container mt-3">
-                            <video controls>
-                                <source src="janjalani-video.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                        <h4 class="gold">Shaykh Abdurazzaq Janjalani (May Allah Accept Him)</h4>
+                        <p class="small mb-4">Prominent Islamic scholar from Mindanao.</p>
+
+                        <h6 class="gold mt-4">Video Lectures</h6>
+
+                        <!-- Video 1 -->
+                        <div class="mb-5">
+                            <p class="mb-2"><strong>Video 1</strong></p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="janjalani-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </div>
-                        <p class="small text-center mt-2">Abdurazzaq Janjalani (May Allah Accept Him) - Video Recording</p>
+
+                        <!-- Video 2 -->
+                        <div class="mb-5">
+                            <p class="mb-2"><strong>Video 2</strong></p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="janjalani-2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+
+                        <!-- Add more videos here the same way -->
                     </div>
                 </div>
             </div>
